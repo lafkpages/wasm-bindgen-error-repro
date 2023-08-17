@@ -1,7 +1,12 @@
-import { dev } from '$app/environment'
+import { browser, dev } from '$app/environment'
 
 import * as wasm from 'wasm/wasm_bg.wasm'
 import * as wasmBindings from 'wasm/wasm_bg.js'
+
+if (browser) {
+  // @ts-ignore
+  window.wasm = { wasm, wasmBindings }
+}
 
 wasmBindings.__wbg_set_wasm(wasm)
 
