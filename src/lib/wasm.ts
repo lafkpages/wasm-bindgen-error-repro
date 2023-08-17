@@ -1,7 +1,7 @@
 import { browser, dev } from '$app/environment'
 
-import * as wasm from 'wasm/wasm_bg.wasm'
-import * as wasmBindings from 'wasm/wasm_bg.js'
+import * as wasm from 'notwasm/notwasm_bg.wasm'
+import * as wasmBindings from 'notwasm/notwasm_bg.js'
 
 if (browser) {
   // @ts-ignore

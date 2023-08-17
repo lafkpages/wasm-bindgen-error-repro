@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 optionalDependencies:
-  wasm:
+  notwasm:
     specifier: file:wasm/pkg
     version: file:wasm/pkg
 

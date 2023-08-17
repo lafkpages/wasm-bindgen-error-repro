@@ -45,7 +45,7 @@
     "wasm-pack": "^0.12.1"
   },
   "optionalDependencies": {
-    "wasm": "file:wasm/pkg"
+    "notwasm": "file:wasm/pkg"
   },
   "type": "module"
 }
